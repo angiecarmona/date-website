@@ -1,0 +1,78 @@
+body {
+    background-color: #fdf5e6; /* White cream color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    position: relative; /* Necessary for absolutely positioning the buttons */
+}
+
+.image-container {
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#date-img {
+    width: 80%; /* Adjust as needed */
+}
+
+#erm-fingers {
+    position: absolute; /* Position the erm-fingers.gif similarly to date.png */
+    top: 60%; /* Adjust this as needed */
+    left: 50%; /* Adjust this as needed */
+    transform: translate(-50%, -50%);
+    z-index: 5; /* Ensure it's behind the buttons */
+}
+
+#erm-fingers {
+    width: 100%; /* Adjust this value to make the GIF smaller or larger */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+#erm-fingers {
+    width: 250px; /* Set the width to 100 pixels */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+#oh-yay {
+    position: absolute; /* Position the GIF absolutely within the container */
+    top: 60%; /* Adjust this to move the GIF vertically */
+    left: 50%; /* Adjust this to move the GIF horizontally */
+    transform: translate(-50%, -50%); /* Center the GIF based on its center */
+    z-index: 10; /* Ensure the GIF appears above other elements */
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    position: absolute; /* Position the buttons absolutely */
+}
+
+.btn-yes {
+    background-color: #4CAF50;
+    color: white;
+    top: 80%; /* Adjust this to move the Yes button vertically */
+    left: 30%; /* Adjust this to move the Yes button horizontally */
+}
+
+.btn-no {
+    background-color: #f44336;
+    color: white;
+    top: 80%; /* Adjust this to move the No button vertically */
+    left: 65%; /* Adjust this to move the No button horizontally */
+}
